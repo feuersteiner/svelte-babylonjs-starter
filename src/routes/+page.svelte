@@ -1,2 +1,19 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Engine from '$lib/engine.svelte';
+</script>
+
+<div class="column">
+	<h1>Welcome to Babylonjs on Svelte!</h1>
+	<Engine />
+</div>
+
+<style>
+	.column {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		width: 100vw;
+		height: 100%;
+		overflow-y: hidden;
+	}
+</style>
